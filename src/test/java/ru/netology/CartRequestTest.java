@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class CartRequestTest {
     @Test
-    void shouldAcceptRequestgit() {
+    void shouldAcceptRequest() {
         open("http://localhost:9999");
         SelenideElement form = $(By.cssSelector(".form_size_m"));
         form.$("[data-test-id=name] input").setValue("Петрова Евгения");
